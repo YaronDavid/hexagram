@@ -1,0 +1,540 @@
+<http>
+<head>
+    <title>Mi proyecto</title>
+    <link rel="stylesheet" type="text/css" href="estilo1.css"/>
+    <script type="text/javascript" src="proyecto.js">
+    </script>
+</head>
+<body onload="iniciar()">
+    <div>
+    <h1 class="portada">Esquivel Ventura Yaron David</h1><br />
+    <h1 class="portada"> Proyecto, 2CM8</h1><br />
+    <h1 class="portada"> Tecnologias para la web</h1>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form action="" method="GET" onsubmit="reiniciar()">
+                    <fieldset>
+                        <legend>Hexagramas</legend>
+                    <span class="aparte">Inserte tres numeros cuya suma sea 6, 7, 8 o 9<br/>
+con los numeros 2 y 3</span> 
+                    <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<label>Primer número</label><br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="uno" size="10"/><br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<label>Segundo número</label><br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="dos" size="10"/><br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<label>Tercer número</label><br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="tres" size="10"/><br/><br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Subir" class="boton" onclick="subir()"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="Borrar linea" class="boton" onclick="borrar()"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Reiniciar" class="boton"/><br/><br/>
+                </fieldset>
+                </form>
+            </td>
+            <td id="mutantes">
+                <table>
+                    <tr>
+                        <td id="dibujadas" onmouseover = "escribir(1)" onmouseout="nada(1)"></td>
+                        <td id="normales" onmouseover =  "escribir(2)" onmouseout="nada(2)"></td>
+                        <td id="cambiadas" onmouseover = "escribir(3)" onmouseout="nada(3)"></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="vacio">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td colspan="2" id="tabla">
+                <table id="tabla1">
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                Trigrama
+                                Superior
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                _______
+                                _______
+                                Ch'ien
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                ___ ___
+                                ___ ___
+                                _______
+                                Chen
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                ___ ___
+                                _______
+                                ___ ___
+                                K'an
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                ___ ___
+                                ___ ___
+                                Ken
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                ___.___
+                                ___ ___
+                                ___ ___
+                                Kun
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                _______
+                                ___ ___
+                                Sun
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                ___ ___
+                                _______
+                                Li
+                            </p>
+                        </td>
+                        <td class="tab">
+                            <p class="conte">
+                                ___ ___
+                                _______
+                                _______
+                                Tui
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                Trigrama
+                                Inferior
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                _______
+                                _______
+                                Ch'ien
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                1
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                34
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                5
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                26
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                11
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                9
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                14
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                43
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                ___ ___
+                                ___ ___
+                                _______
+                                Chen
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                25
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                51
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                3
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                27
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                24
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                42
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                21
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                17
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                ___ ___
+                                _______
+                                ___ ___
+                                K'an
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                6
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                40
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                29
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                4
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                7
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                59
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                64
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                47
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                ___ ___
+                                ___ ___
+                                Ken
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                33
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                62
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                39
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                52
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                15
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                53
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                56
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                31
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                ___.___
+                                ___ ___
+                                ___ ___
+                                Kun
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                12
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                16
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                8
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                23
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                2
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                20
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                35
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                45
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                _______
+                                ___ ___
+                                Sun
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                44
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                32
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                48
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                18
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                46
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                57
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                50
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                28
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                _______
+                                ___ ___
+                                _______
+                                Li
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                13
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                55
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                63
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                22
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                36
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                37
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                30
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                49
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tab">
+                            <p class="conte">
+                                ___ ___
+                                _______
+                                _______
+                                Tui
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                10
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                54
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                60
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                41
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                19
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                61
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                38
+                            </p>
+                        </td>
+                        <td>
+                            <p class="numeros">
+                                58
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+   
+</body>
+</http>
